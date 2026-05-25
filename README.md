@@ -77,5 +77,34 @@ token and json text data as parameters.
 
 All lines in a sterry menu are terminated by "CR+LF".
 
++------+----------------------------------------------------------+
+| type | description                                              |
++------+----------------------------------------------------------+
+| mi   | Informational message, widely used                       |
+| mm   | Menu file                                                |
+| mt   | Text file                                                |
+| mj   | Json text file                                           |
+| mb   | Binary file                                              |
+| mh   | HTML file                                                |
+| mp   | Image file (common)                                      |
+| mv   | Movie file (common)                                      |
+| ms   | Sound file (common)                                      |
+| md   | Documentation file (common)                              |
+| me   | Embedded file (common)                                   |
+| pg   | Image file (.gif)                                        |
+| pb   | Image file (.bmp)                                        |
+| pn   | Image file (.png)                                        |
+| v4   | Movie file (.mp4)                                        |
+| s3   | Sound file (.mp3)                                        |
+| dp   | Documentation file (.pdf)                                |
+| dw   | Documentation file (.doc, .docx)                         |
+| dx   | Documentation file (.xls, .xlsx)                         |
+| dr   | Documentation file (.ppt, .pptx)                         |
+| dl   | Documentation file (.xml)                                |
+| ey   | Embedded file (YouTube)                                  |
+| ed   | Embedded file (DailyMotion)                              |
+| eh   | Embedded file (HTML)                                     |
+| es   | Embedded file (Server-side scripts)                      |
++------+----------------------------------------------------------+
 
 ```
