@@ -27,6 +27,7 @@ document to be retrieved. The selector includes:
 server name / ip<cr+lf>
 server port<cr+lf>
 auth token<cr+lf>
+json text data<cr+lf>
 document path<cr+lf><cr+lf>
 -----
 
@@ -47,6 +48,34 @@ data / menu
 + Response type:
   o 'm': menu
   o 't': text data
+  o 'j': json text data
   o 'b': binary data
+
+
+---------------------|__/--
+      Menu Format
+---------------------------
+
+Sterry menu items are defined by lines of tab-separated
+values in a text file. This file can be called a sterrymap.
+Each tab-seperated line (called a selector line) gives
+the client software a description of the menu item: what
+it is, what it is called, and where it leads to. The client
+displays the menu items in the order that they appear in the
+sterrymap.
+
+The first two characters in a selector line indicates the
+item type, which tells the client what kind of file or protocol
+the menu item points to. This helps the client decide what to
+do with it.
+
+The item type is followed by the user display string (a description
+or label that represents the item in the menu; the selector (a path
+or other string for the resource on the server); the hostname (the
+domain name or IP address of the server; the network port; the auth
+token and json text data as parameters.
+
+All lines in a sterry menu are terminated by "CR+LF".
+
 
 ```
